@@ -9,3 +9,5 @@ Projects from the ALU higher-level programming track, written in Python 3
   slicing, and running Python from shell scripts.
 - [python-if_else_loops_functions](./python-if_else_loops_functions):
   conditions, loops, and simple functions.
+- [python-import_modules](./python-import_modules): importing modules,
+  command-line arguments, and guarding code with `__main__`.
