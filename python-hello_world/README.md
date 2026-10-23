@@ -15,3 +15,6 @@ slicing.
 | `7-edges.py` | Prints the first 3, last 2, and middle letters of a word |
 | `8-concat_edges.py` | Builds a sentence using only slicing |
 | `9-easter_egg.py` | Prints "The Zen of Python" |
+| `100-write.py` | Writes a sentence to stderr with `sys.stderr.write` and exits with status 1 |
+| `101-compile` | Bash script that compiles the file named in `$PYFILE` to `$PYFILEc` |
+| `102-magic_calculation.py` | `magic_calculation(a, b)`: Python equivalent of a given bytecode |
