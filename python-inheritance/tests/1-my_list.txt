@@ -1,0 +1,81 @@
+============================
+Tests for 1-my_list module
+============================
+
+Import the class:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Normal case, the list is printed sorted and left unchanged:
+
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+
+MyList is a list:
+
+    >>> isinstance(my_list, list)
+    True
+    >>> issubclass(MyList, list)
+    True
+
+Empty list:
+
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
+Only one element:
+
+    >>> my_list = MyList([7])
+    >>> my_list.print_sorted()
+    [7]
+
+Already sorted:
+
+    >>> my_list = MyList([1, 2, 3])
+    >>> my_list.print_sorted()
+    [1, 2, 3]
+
+Reverse order:
+
+    >>> my_list = MyList([3, 2, 1])
+    >>> my_list.print_sorted()
+    [1, 2, 3]
+
+Negative numbers and zero:
+
+    >>> my_list = MyList([3, -1, 0, -5, 2])
+    >>> my_list.print_sorted()
+    [-5, -1, 0, 2, 3]
+    >>> print(my_list)
+    [3, -1, 0, -5, 2]
+
+Duplicated numbers:
+
+    >>> my_list = MyList([2, 1, 2, 1, 3])
+    >>> my_list.print_sorted()
+    [1, 1, 2, 2, 3]
+
+Built from an iterable:
+
+    >>> my_list = MyList(range(5, 0, -1))
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+
+The original list keeps working after sorting:
+
+    >>> my_list.append(0)
+    >>> my_list.print_sorted()
+    [0, 1, 2, 3, 4, 5]
+    >>> print(my_list)
+    [5, 4, 3, 2, 1, 0]
