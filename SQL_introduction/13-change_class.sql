@@ -1,2 +1,2 @@
--- Removes all the records with a score <= 5.
+-- REMOVES THE RECORDS WITH A LOW SCORE.
 DELETE FROM second_table WHERE score <= 5;

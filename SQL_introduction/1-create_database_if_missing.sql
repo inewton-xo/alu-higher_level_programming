@@ -1,2 +1,2 @@
--- Creates the database hbtn_0c_0 if it does not exist.
+-- CREATES THE DATABASE IF IT IS MISSING.
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;

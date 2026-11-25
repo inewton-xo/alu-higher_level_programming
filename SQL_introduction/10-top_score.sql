@@ -1,2 +1,2 @@
--- Lists the score and name of all records, best score first.
+-- LISTS THE RECORDS, BEST SCORE FIRST.
 SELECT score, name FROM second_table ORDER BY score DESC;

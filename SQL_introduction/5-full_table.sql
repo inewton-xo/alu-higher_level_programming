@@ -1,2 +1,2 @@
--- Prints the full definition of the table first_table.
+-- PRINTS THE FULL DEFINITION OF THE FIRST TABLE.
 SHOW CREATE TABLE first_table;

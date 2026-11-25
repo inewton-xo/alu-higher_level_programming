@@ -1,2 +1,2 @@
--- Counts the records for each score, most frequent first.
+-- COUNTS THE RECORDS OF EACH SCORE.
 SELECT score, COUNT(*) AS number FROM second_table GROUP BY score ORDER BY number DESC;

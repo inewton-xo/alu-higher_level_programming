@@ -1,2 +1,2 @@
--- Lists the records with a score >= 10, best score first.
+-- LISTS THE RECORDS WITH A SCORE OF 10 OR MORE.
 SELECT score, name FROM second_table WHERE score >= 10 ORDER BY score DESC;

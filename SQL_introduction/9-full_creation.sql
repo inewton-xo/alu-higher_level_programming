@@ -1,4 +1,4 @@
--- Creates the table second_table if it does not exist and adds rows.
+-- CREATES THE SECOND TABLE AND ADDS FOUR ROWS.
 CREATE TABLE IF NOT EXISTS second_table (
     id INT,
     name VARCHAR(256),
